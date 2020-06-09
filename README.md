@@ -15,5 +15,5 @@ Important information such as currently running processes and the environment va
 
 <p>
 Future work will include an edit and save button next to certain items so that config can be changed. 
-Also, remote connectivity and remote machine control will be added as well to allow for remote administration. 
+Also, remote connectivity and remote machine control will be added to allow for remote administration. 
 </p>
