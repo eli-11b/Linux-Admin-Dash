@@ -6,7 +6,7 @@ The other tabs will allow for viewing and editing cron jobs and database informa
 <img src="images/Screenshot1_systemStats.png">
 
 <p>
-Important information such as currently running processes and the environment variables are shown. 
+Information such as currently running processes and the environment variables are shown. 
 </p>
 <img src="images/Screenshot2_systemStats.png">
 
