@@ -16,4 +16,12 @@ Information such as currently running processes and the environment variables ar
 <p>
 Future work will include an edit and save button next to certain items so that config can be changed. 
 Also, remote connectivity and remote machine control will be added to allow for remote administration. 
+  <br>
+  <br>-Add a place to kill a pid with output display
+  <br>-Add a place for launchctl -list for apple machines
+  <br>-Add a place for systemctl --type=service for linux machines
+  <br>-Add a place for iostat
+  <br>-Add a place for free (memory)
+  <br>-Add a place for network monitoring
+  
 </p>
