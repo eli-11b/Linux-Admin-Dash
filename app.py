@@ -7,8 +7,6 @@ import webbrowser as wb
 
 url='localhost:5000'
 
-
-
 app = Flask(__name__, template_folder="templates", static_folder="assets")
 
 # def get_shell_script_output():
@@ -16,14 +14,18 @@ app = Flask(__name__, template_folder="templates", static_folder="assets")
 # 	stdout= check_output(['./some.sh']).decode('utf-8')
 # 	return stdout
 
+# return the home page
 @app.route('/',methods=['GET',])
 def home():
 	return render_template("index.html")
-    #return '<center><h3>System Information</h3></center><br><pre>'+get_shell_script_output()+'</pre>'
-#wb.open(url)
+
+#return the system stats page
 @app.route('/system_stats',methods=['GET',])
 def system_stats():
-
+"""
+This function runs the bash scripts and sends the output to the stats page to their respective areas
+and renders the stats.html template. 
+"""
 	user=getpass.getuser()
 	uptime= check_output(['./uptime.sh']).decode('utf-8')
 	cronjobs= check_output(['./cronjobs.sh']).decode('utf-8')
@@ -41,10 +43,5 @@ def system_stats():
 							env_variables=env_variables,
 							processes=processes
 							)
-							
-    #return '<center><h3>System Information</h3></center><br><pre>'+get_shell_script_output()+'</pre>'
-#wb.open(url)
-
-
 
 app.run(debug=True)
