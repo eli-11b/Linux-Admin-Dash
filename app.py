@@ -2,17 +2,10 @@ import subprocess
 from subprocess import Popen, PIPE
 from subprocess import check_output
 from flask import Flask, render_template, request, url_for, Response
-import getpass
-import webbrowser as wb
 
 url='localhost:5000'
 
 app = Flask(__name__, template_folder="templates", static_folder="assets")
-
-# def get_shell_script_output():
-# 	user=getpass.getuser()
-# 	stdout= check_output(['./some.sh']).decode('utf-8')
-# 	return stdout
 
 # return the home page
 @app.route('/',methods=['GET',])
@@ -26,7 +19,7 @@ def system_stats():
 This function runs the bash scripts and sends the output to the stats page to their respective areas
 and renders the stats.html template. 
 """
-	user=getpass.getuser()
+	
 	uptime= check_output(['./uptime.sh']).decode('utf-8')
 	cronjobs= check_output(['./cronjobs.sh']).decode('utf-8')
 	currentIPs= check_output(['./currentIPs.sh']).decode('utf-8')
