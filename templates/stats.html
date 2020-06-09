@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Linux_Admin</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.5.0/materia/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap">
+    <link rel="stylesheet" href="/assets/css/untitled.css">
+</head>
+
+<body>
+    <div class="card"></div>
+    <nav class="navbar navbar-light navbar-expand-md">
+        <div class="container-fluid"><a class="navbar-brand" href="#"><img src="/assets/img/Tux_Enhanced.svg.png" style="height: 75px;">Linux Admin</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#"><strong>System Statistics</strong></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link text-body" href="#"><strong>CronJobs</strong></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link text-body" href="#"><strong>Database</strong></a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <!-- -->
+    <br><center><h3>System Stats</h3></center><br>
+    <div id="top-div"></div>
+    <div id="top-row-2-column-cards">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body" id="card-uptime">
+                            <h4 class="card-title">Uptime</h4><textarea id="uptime">{{uptime}}</textarea>
+                            <h6 class="text-muted card-subtitle mb-2" id="uptime-card-subtitle-heading">Displays system uptime</h6>
+                            <p class="card-text">Knowing your server's uptime means knowing when your server and what it serves is accessible.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Cron Jobs List</h4><textarea id="cronjobsList-output">{{cronjobs}}</textarea>
+                            <h6 class="text-muted card-subtitle mb-2" id="cronjobs-card-subtitle-heading">Cron Jobs</h6>
+                            <p class="card-text">* * * * * &lt;command to execute&gt;<br>The syntax is minutes (0-59), hours (0-23), day of month (1-31), month (1-12), and day of the week (0-6).&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="row2-div"></div>
+    <div id="top-row-2-column-cards-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body" id="card-uptime">
+                            <h4 class="card-title">Current users &amp; load average</h4><textarea id="currentUsers-output">{{current_users}}</textarea>
+                            <h6 class="text-muted card-subtitle mb-2" id="uptime-card-subtitle-heading">Displays current user information</h6>
+                            <p class="card-text">Who is logged in and what is their load on the machine?.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body" id="card-uptime">
+                            <h4 class="card-title">Current IP Addresses</h4><textarea id="currentUsers-output">{{currentIPs}}</textarea>
+                            <h6 class="text-muted card-subtitle mb-2" id="uptime-card-subtitle-heading">Displays&nbsp;Current IP Addresses</h6>
+                            <p class="card-text">IPv4 and IPv6 addresses.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="div-3rd-row">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="text-center card-title">Disk Space</h4><textarea id="diskSpace-output">{{disk_space}}</textarea></div>
+                </div>
+            </div>
+        </div>
+
+        <div id=process-output-div>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="text-center card-title">Processes</h4><textarea id="processes-output">{{processes}}</textarea></div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div id=envVariables-output-div>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="text-center card-title">Environment Variables</h4><textarea id="evnVariables-output">{{env_variables}}</textarea></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <style>
+            #process-output-div {
+                margin-top: 15px;
+            }
+            #envVariables-output-div {
+                margin-top: 15px;
+            }
+
+        </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

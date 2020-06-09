@@ -1,0 +1,85 @@
+#uptime-card {
+  width: 450px;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+#div-uptime-card {
+  max-width: 500px;
+  padding: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#top-row-2-column-cards {
+  margin-top: 10px;
+}
+
+#cronjobsList-output {
+  width: 450px;
+  padding: 3px;
+}
+
+#card-uptime {
+  padding: 33px;
+}
+
+#cronjobs-card-subtitle-heading {
+  padding-top: 12px;
+}
+
+#uptime {
+  width: 438px;
+}
+
+#uptime-card-subtitle-heading {
+  padding-top: 12px;
+}
+
+#row2-div {
+  margin-top: 15px;
+}
+
+#currentIPs-output {
+  width: 500px;
+  height: 125px;
+}
+
+#currentUsers-output {
+  width: 443px;
+  height: 60px;
+}
+
+#div-3rd-row {
+  margin-top: 15px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#diskSpace-output {
+  width: 1075px;
+  height: 200px;
+}
+
+#diskspace-card-subtitle-header {
+  padding-top: 12px;
+}
+
+#processes-output {
+  width: 1075px;
+  height: 200px;
+}
+
+#evnVariables-output {
+  width: 1075px;
+  height: 200px;
+}
+
+#process-row {
+  margin-top: 15px;
+}
+
+#row-processes {
+  margin-top: 15px;
+}
+
