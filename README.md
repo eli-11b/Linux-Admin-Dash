@@ -42,7 +42,7 @@ Information about users, IP addresses, disk space, processes and environment var
 ## Future Work
 
 <p> 
-Also, remote connectivity and remote machine control will be added to allow for remote administration. 
+All buttons need to be wired. I will have a modal display for the submitting and confirming input and commands when a button is clicked. Also, remote connectivity and remote machine control will be added to allow for remote administration.
   <br>
   <br>-Add a place for launchctl -list for apple machines
   <br>-Add a place for systemctl --type=service for linux machines
