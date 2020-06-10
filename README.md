@@ -10,18 +10,17 @@ To run:
   <br> 2)Run app.py with python3
   <br> 3)open browser to <strong>localhost:5000</strong>
 </p>
-<img src="images/Screenshot1_systemStats.png">
+<img src="images/Screenshot1-systemstats.png">
 
 <p>
 Information such as currently running processes and the environment variables are shown. 
 </p>
-<img src="images/Screenshot2_systemStats.png">
+<img src="images/Screenshot2-systemstats.png">
 
 
 ## Future Work
 
-<p>
-Future work will include an edit and save button next to certain items so that config can be changed. 
+<p> 
 Also, remote connectivity and remote machine control will be added to allow for remote administration. 
   <br>
   <br>-Add a place to kill a pid with output display
