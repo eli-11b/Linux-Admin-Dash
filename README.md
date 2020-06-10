@@ -10,6 +10,12 @@ To run:
   <br> 2)Run app.py with python3
   <br> 3)open browser to <strong>localhost:5000</strong>
 </p>
+
+<p>
+  The overview show a nice and clearn responsive display. 
+
+</p>
+
 <img src="images/Screenshot1-systemstats.png">
 
 <p>
