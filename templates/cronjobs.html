@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Linux_Admin</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.5.0/materia/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/Table-With-Search-1.css?h=891e825c5ecafa201cbb56466e2c0dd6">
+    <link rel="stylesheet" href="/assets/css/Table-With-Search.css?h=dfd8bb3ecf4126e3b00f75b3f19292a7">
+    <link rel="stylesheet" href="/assets/css/untitled.css?h=1e801b2d74da0e0d8a2b8ed65aafb45c">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md">
+        <div class="container-fluid"><a class="navbar-brand" href="/index.html"><img src="/assets/img/Tux_Enhanced.svg.png?h=a304f978ac7dd60b30955be497d25eca" style="height: 75px;">Linux Admin</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="/stats.html"><strong>System Statistics</strong></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link text-body" href="/cronjobs.html"><strong>CronJobs</strong></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link text-body" href="#"><strong>Database</strong></a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <div id="Cronjobs-list-cronjobpage"></div>
+    <div class="card" id="cronjobs-card-cronjobspage">
+        <div class="card-body">
+            <h4 class="card-title">Cron Jobs List</h4>
+            <div class="btn-group" role="group" style="padding: 0px;"><button class="btn btn-primary btn-sm text-left" data-toggle="tooltip" data-bs-tooltip="" id="btn-cronjobs-new" type="submit" title="New cron job">New</button><button class="btn btn-primary btn-sm" data-toggle="tooltip" data-bs-tooltip=""
+                    id="btn-cronjobs-backup" type="submit" title="Backup cron job">Backup</button><button class="btn btn-primary btn-sm" data-toggle="tooltip" data-bs-tooltip="" id="btn-cronjobs-import" type="submit" title="Import cron job">Import</button>
+                <button
+                    class="btn btn-primary btn-sm" data-toggle="tooltip" data-bs-tooltip="" id="btn-cronjobs-export" type="submit" title="Export cron job">Export</button>
+            </div>
+            <!-- Start: Table With Search -->
+            <div class="col-md-12 search-table-col">
+                <div class="form-group pull-right col-lg-4"><input type="text" class="search form-control" placeholder="Search by typing here.."></div><span class="counter pull-right"></span>
+                <div class="table-responsive table-bordered table table-hover table-bordered results">
+                    <table class="table table-bordered table-hover">
+                        <thead class="bill-header cs">
+                            <tr>
+                                <th id="trs-hd" class="col-lg-1">#</th>
+                                <th id="trs-hd" class="col-lg-2">Name</th>
+                                <th id="trs-hd" class="col-lg-3">Job</th>
+                                <th id="trs-hd" class="col-lg-2">Time</th>
+                                <th id="trs-hd" class="col-lg-2">Last Modified</th>
+                                <th id="trs-hd" class="col-lg-2"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="warning no-result">
+                                <td colspan="12"><i class="fa fa-warning"></i>&nbsp; No Result !!!</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">01</td>
+                                <td class="text-center">Backup&nbsp;</td>
+                                <td class="text-center">&nbsp;/home/eli/bin/backup.sh &gt;&gt; /home/eli/logs/back.log 2&gt;&amp;1</td>
+                                <td class="text-center">*/2 * * * *</td>
+                                <td class="text-center">5 minutes ago</td>
+                                <td class="text-center"><button class="btn btn-success" data-toggle="tooltip" data-bs-tooltip="" id="btn-edit-cronjob" style="margin-left: 5px;" type="submit" title="Edit Job"><i class="fa fa-edit" style="font-size: 15px;"></i></button>
+                                    <button
+                                        class="btn btn-primary" data-toggle="tooltip" data-bs-tooltip="" id="btn-stopjob-cronjobpage" style="margin-left: 5px;background-color: rgb(115,156,232);" type="submit" title="Stop Job"><i class="fa fa-hand-stop-o" style="font-size: 15px;"></i></button><button class="btn btn-danger" data-toggle="tooltip" data-bs-tooltip="" id="btn-deletejob-cronjobpage" style="margin-left: 5px;" type="submit" title="Delete Job"><i class="fa fa-trash" style="font-size: 15px;"></i></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- End: Table With Search -->
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/bs-init.js?h=de81e5c47df32ab5ad05d8b1819c4c2a"></script>
+    <script src="/assets/js/Table-With-Search.js?h=aeb9a0ac8b6cc9ec2e3b9cc3add2f239"></script>
+</body>
+
+</html>
