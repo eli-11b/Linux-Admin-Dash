@@ -20,7 +20,7 @@ Information about users, IP addresses, disk space, processes and environment var
 
 ## The web application is responsive so it will work with different screen sizes.
 
-<img src="images/screenshot-responsive.png">
+<img src="images/screenshot1-responsive.png">
 
 ## Cron jobs
 
