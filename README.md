@@ -17,6 +17,13 @@ Information such as currently running processes and the environment variables ar
 </p>
 <img src="images/Screenshot2-systemstats.png">
 
+<p>
+The web application is responsive so it will work with different screen sizes.
+Menu opens up to reveal links. 
+</p>
+<img src="images/screenshot-responsive.png">
+
+
 
 ## Future Work
 
