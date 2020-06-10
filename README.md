@@ -22,6 +22,21 @@ Information about users, IP addresses, disk space, processes and environment var
 
 <img src="images/screenshot-responsive.png">
 
+## Cron jobs
+
+<p>
+    <h3>The application will allow the user to visually:</h3> 	
+	<br><h4>Create Cron Job</h4>
+	<br><h4>Backup Cron Jobs</h4>
+	<br><h4>Import Cron Jobs</h4>
+	<br><h4>Export Cron Jobs</h4>
+	<br><h4>Edit Cron Jobs</h4>
+	<br><h4>Stop Cron Jobs</h4>
+	<br><h4>Delete Cron Jobs</h4>
+
+<img src="images/screenshot-cronjobs.png">
+
+</p>
 
 
 ## Future Work
