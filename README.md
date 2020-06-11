@@ -23,7 +23,7 @@ Information about users, IP addresses, disk space, processes and environment var
   When you press the restart button. 
 
 </p>
-<img src="images/screenshot-modal">
+<img src="images/screenshot-modal.png">
 
 
 
