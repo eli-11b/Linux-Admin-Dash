@@ -2,24 +2,27 @@ import subprocess
 from subprocess import Popen, PIPE
 from subprocess import check_output
 from flask import Flask, render_template, request, url_for, Response
+import getpass
+import webbrowser as wb
 
 url='localhost:5000'
-
 app = Flask(__name__, template_folder="templates", static_folder="assets")
 
-# return the home page
+
+
 @app.route('/',methods=['GET',])
 def home():
+	""" This function renders the index template"""
+
 	return render_template("index.html")
 
-#return the system stats page
+
+#System Statistics
 @app.route('/system_stats',methods=['GET',])
 def system_stats():
-"""
-This function runs the bash scripts and sends the output to the stats page to their respective areas
-and renders the stats.html template. 
-"""
-	
+	""" This function renders the system statistics template and passes the variables to the front end. """
+
+	user=getpass.getuser()
 	uptime= check_output(['./uptime.sh']).decode('utf-8')
 	cronjobs= check_output(['./cronjobs.sh']).decode('utf-8')
 	currentIPs= check_output(['./currentIPs.sh']).decode('utf-8')
@@ -36,5 +39,12 @@ and renders the stats.html template.
 							env_variables=env_variables,
 							processes=processes
 							)
+							
+#Cron Jobs
+@app.route('/cronjobs',methods=['GET',])
+
+def cronjobs():
+	""" This function renders the cronjobs template."""
+	return render_template("cronjobs.html")
 
 app.run(debug=True)

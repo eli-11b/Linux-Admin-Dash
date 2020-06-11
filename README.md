@@ -18,9 +18,14 @@ Information about users, IP addresses, disk space, processes and environment var
 <img src="images/screenshot-overview.png">
 <br>
 
-## The web application is responsive so it will work with different screen sizes.
+## Modals for confirmation and setting changes. 
+<p>
+  When you press the restart button. 
 
-<img src="images/screenshot1-responsive.png">
+</p>
+<img src="images/screenshot-modal">
+
+
 
 ## Cron jobs
 

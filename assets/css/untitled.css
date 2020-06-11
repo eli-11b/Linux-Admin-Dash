@@ -16,7 +16,7 @@
 }
 
 #cronjobsList-output {
-  width: 450px;
+  width: 100%;
   padding: 3px;
 }
 
@@ -29,7 +29,7 @@
 }
 
 #uptime {
-  width: 438px;
+  width: 100%;
 }
 
 #uptime-card-subtitle-heading {
@@ -46,7 +46,7 @@
 }
 
 #currentUsers-output {
-  width: 443px;
+  width: 100%;
   height: 60px;
 }
 
@@ -57,7 +57,7 @@
 }
 
 #diskSpace-output {
-  width: 1075px;
+  width: 100%;
   height: 200px;
 }
 
@@ -66,20 +66,103 @@
 }
 
 #processes-output {
-  width: 1075px;
+  width: 100%;
   height: 200px;
 }
 
 #evnVariables-output {
-  width: 1075px;
+  width: 100%;
   height: 200px;
+  margin-left: 50px;
+  margin: 0 50px 50px 0px;
 }
 
 #process-row {
+  margin: auto;
   margin-top: 15px;
+  max-width: 1150px;
 }
 
 #row-processes {
   margin-top: 15px;
+}
+
+div {
+}
+
+#Cronjobs-list-cronjobpage {
+  margin-top: 10px;
+  max-width: 500px;
+  width: 500px;
+}
+
+#cronjobs-card-cronjobspage {
+  /*width: 900px;*/
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#btn-cronjobs-new {
+  /*padding-right: 5px;*/
+}
+
+#btn-edit-cronjob {
+  border-radius: 5px;
+}
+
+#btn-stopjob-cronjobpage {
+  border-radius: 5px;
+  #btn-stopjob-cronjobpage {  border-radius: 15px;
+}
+
+#btn-deletejob-cronjobpage {
+  border-radius: 15px;
+}
+
+#btn-restart-uptime-card {
+  margin-right: 35px;
+}
+
+#row-diskspace {
+}
+
+#div-row-diskspace {
+}
+
+#div-row-processes {
+}
+
+#card-processes {
+  /*margin-left: 50px;*/
+}
+
+#process-row {
+}
+
+#div-environment-variables {
+  /*margin: 0px 50px 50px 0px;*/
+  /*padding: 0px 50px 50px 0px;*/
+}
+
+#disk-space-card {
+}
+
+#environment-variables-card {
+}
+
+#environment-variables-card {
+}
+
+#row-environment-variables {
+  /*width: 70%;*/
+}
+
+#heading-system-stats {
+}
+
+#column-processes {
+  max-width: 1150px;
+  margin: auto;
+  margin-top: 10px;
 }
 
