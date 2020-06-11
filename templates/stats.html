@@ -96,6 +96,30 @@
   </div>
   <!--### End Renew Modal -->
 
+  <!-- ### Kill Process confirm Modal -->
+      <!-- The Modal -->
+  <div class="modal" id="killprocessModal">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header" style="background-color: #e84c31;>
+          <h4 class="modal-title"><p><strong>Info:</strong> Are you sure you want to kill the process?</p></h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success btn-sm" data-dismiss="modal" style="color: white;"><strong>Cancel</strong></button>
+          <button type="submit" class="btn btn-danger btn-sm"><strong>Kill</strong></button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!--### End Renew Modal -->
+
+
 
     <!-- ############# End Modal Section ####################################### -->
 
@@ -184,7 +208,7 @@
             <div class="col" id="column-processes">
                 <div class="card" id="card-processes">
                     <div class="card-body">
-                        <h4 class="text-left card-title"><strong>Processes</strong><button class="btn btn-danger btn-sm text-center border rounded float-right" type="submit"><strong>Kill</strong></button><input class="form-control-sm float-right" type="text" placeholder="PID to kill"
+                        <h4 class="text-left card-title"><strong>Processes</strong><button class="btn btn-danger btn-sm text-center border rounded float-right" type="button" data-toggle="modal" data-target="#killprocessModal"><strong>Kill</strong></button><input class="form-control-sm float-right" type="text" placeholder="PID to kill"
                                 name="pid2kill" style="height: 25px;margin: 1px;"></h4><textarea id="processes-output">{{processes}}</textarea></div>
                 </div>
             </div>
