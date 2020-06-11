@@ -21,9 +21,12 @@ Information about users, IP addresses, disk space, processes and environment var
 ## Modals for confirmation and setting changes. 
 <p>
   When you press the restart button. 
-
-</p>
 <img src="images/screenshot-modal.png">
+  When you press release IP
+<img src="images/screenshot-modal-releaseip.png">
+</p>
+
+
 
 
 
