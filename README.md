@@ -36,8 +36,9 @@ Information about users, IP addresses, disk space, processes and environment var
 ## Cron jobs
 
 <p>
-    <h3>The application will allow the user to visually:</h3> 	
+  <h3>The application will allow the user to visually:</h3> 	
 	<br><h4>Create Cron Job</h4>
+  <img src="images/screenshot-modal-newcronjob.png">
 	<h4>Backup Cron Jobs</h4>
 	<h4>Import Cron Jobs</h4>
 	<h4>Export Cron Jobs</h4>

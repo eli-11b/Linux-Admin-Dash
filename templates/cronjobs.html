@@ -11,7 +11,221 @@
     <link rel="stylesheet" href="/assets/css/Table-With-Search-1.css?h=891e825c5ecafa201cbb56466e2c0dd6">
     <link rel="stylesheet" href="/assets/css/Table-With-Search.css?h=dfd8bb3ecf4126e3b00f75b3f19292a7">
     <link rel="stylesheet" href="/assets/css/untitled.css?h=1e801b2d74da0e0d8a2b8ed65aafb45c">
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
+
+<!--######################################### Modals -->
+
+
+<!-- ### New cron job Modal -->
+      <!-- The Modal -->
+  <div class="modal" id="cronjobs-newmodal">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header" style="background-color:#0275d8; height: 50px;color: white;">
+          <h4 class="modal-title"><p>New Cron Job</p></h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          <form>
+            <div class="form-group" style="padding:15px;">
+              
+                  
+                  <input type="text" class="form-control" placeholder ="Enter Job Name" id="cronjob-name">
+             
+                  
+                  <input type="text" placeholder ="Enter script location" class="form-control" id="cronjob-job">
+              
+                  
+                  <input type="text" class="form-control" placeholder ="Enter Minutes (0-59)" id="cronjob-min">
+
+                  
+                  <input type="text" class="form-control" placeholder ="Enter Hours (0-23)" id="cronjob-hour">
+
+                  
+                  <input type="text" class="form-control" placeholder ="Enter Day of Month (1-31)" id="cronjob-dom">
+                  
+                  
+                  <input type="text" class="form-control" placeholder ="Enter Month (1-12)" id="cronjob-month">
+
+                  
+                  <input type="text" class="form-control" placeholder ="Enter Day of Week (0-6)" id="cronjob-dow">
+            </div>
+          </form>
+        </div>
+        
+
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success btn-sm" data-dismiss="modal" style="color: white;"><strong>Cancel</strong></button>
+          <button type="submit" class="btn btn-primary btn-sm"><strong>Create Cron Job</strong></button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!--### End New Cronjob Modal -->
+
+<!-- ### Backup cron job Modal -->
+      <!-- The Modal -->
+  <div class="modal" id="renewIPModal">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header" style="background-color: #5cb85c;height: 50px;">
+          <h6 class="modal-title"><p><strong>Info:</strong> Are you sure?</p></h6>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success btn-sm" data-dismiss="modal" style="color: white;"><strong>Cancel</strong></button>
+          <button type="submit" class="btn btn-primary btn-sm"><strong>Renew</strong></button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!--### End Backup Cronjob Modal -->
+
+
+<!-- ### Import cron job Modal -->
+      <!-- The Modal -->
+  <div class="modal" id="renewIPModal">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header" style="background-color: #5cb85c;height: 50px;">
+          <h6 class="modal-title"><p><strong>Info:</strong> Are you sure?</p></h6>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success btn-sm" data-dismiss="modal" style="color: white;"><strong>Cancel</strong></button>
+          <button type="submit" class="btn btn-primary btn-sm"><strong>Renew</strong></button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!--### End Import Cronjob Modal -->
+
+
+<!-- ### Export cron job Modal -->
+      <!-- The Modal -->
+  <div class="modal" id="renewIPModal">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header" style="background-color: #5cb85c;height: 50px;">
+          <h6 class="modal-title"><p><strong>Info:</strong> Are you sure?</p></h6>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success btn-sm" data-dismiss="modal" style="color: white;"><strong>Cancel</strong></button>
+          <button type="submit" class="btn btn-primary btn-sm"><strong>Renew</strong></button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!--### End Export Cronjob Modal -->
+
+
+
+  <!-- ### Edit cron job Modal -->
+      <!-- The Modal -->
+  <div class="modal" id="renewIPModal">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header" style="background-color: #5cb85c;height: 50px;">
+          <h6 class="modal-title"><p><strong>Info:</strong> Are you sure?</p></h6>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success btn-sm" data-dismiss="modal" style="color: white;"><strong>Cancel</strong></button>
+          <button type="submit" class="btn btn-primary btn-sm"><strong>Renew</strong></button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!--### End edit Cronjob Modal -->
+
+
+<!-- ### stop cron job Modal -->
+      <!-- The Modal -->
+  <div class="modal" id="renewIPModal">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header" style="background-color: #5cb85c;height: 50px;">
+          <h6 class="modal-title"><p><strong>Info:</strong> Are you sure?</p></h6>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success btn-sm" data-dismiss="modal" style="color: white;"><strong>Cancel</strong></button>
+          <button type="submit" class="btn btn-primary btn-sm"><strong>Renew</strong></button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!--### stop New Cronjob Modal -->
+
+
+  <!-- ### delete cron job Modal -->
+      <!-- The Modal -->
+  <div class="modal" id="renewIPModal">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header" style="background-color: #5cb85c;height: 50px;">
+          <h6 class="modal-title"><p><strong>Info:</strong> Are you sure?</p></h6>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success btn-sm" data-dismiss="modal" style="color: white;"><strong>Cancel</strong></button>
+          <button type="submit" class="btn btn-primary btn-sm"><strong>Renew</strong></button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!--### End delete Cronjob Modal -->
+
+
+
+
+<!--######################################### End Modals -->
+
+
+
 
 <body>
     <nav class="navbar navbar-light navbar-expand-md">
@@ -30,10 +244,10 @@
     <div class="card" id="cronjobs-card-cronjobspage">
         <div class="card-body">
             <h4 class="card-title">Cron Jobs List</h4>
-            <div class="btn-group" role="group" style="padding: 0px;"><button class="btn btn-primary btn-sm text-left" data-toggle="tooltip" data-bs-tooltip="" id="btn-cronjobs-new" type="submit" title="New cron job">New</button><button class="btn btn-primary btn-sm" data-toggle="tooltip" data-bs-tooltip=""
-                    id="btn-cronjobs-backup" type="submit" title="Backup cron job">Backup</button><button class="btn btn-primary btn-sm" data-toggle="tooltip" data-bs-tooltip="" id="btn-cronjobs-import" type="submit" title="Import cron job">Import</button>
-                <button
-                    class="btn btn-primary btn-sm" data-toggle="tooltip" data-bs-tooltip="" id="btn-cronjobs-export" type="submit" title="Export cron job">Export</button>
+            <div class="btn-group" role="group" style="padding: 0px;">
+                <button class="btn btn-primary btn-sm text-left" data-toggle="modal" data-target="#cronjobs-newmodal" id="btn-cronjobs-new" type="button" title="New cron job">New</button>
+                <button class="btn btn-primary btn-sm" data-toggle="tooltip" data-bs-tooltip="" id="btn-cronjobs-backup" type="submit" title="Backup cron job">Backup</button><button class="btn btn-primary btn-sm" data-toggle="tooltip" data-bs-tooltip="" id="btn-cronjobs-import" type="submit" title="Import cron job">Import</button>
+                <button class="btn btn-primary btn-sm" data-toggle="tooltip" data-bs-tooltip="" id="btn-cronjobs-export" type="submit" title="Export cron job">Export</button>
             </div>
             <!-- Start: Table With Search -->
             <div class="col-md-12 search-table-col">
