@@ -33,7 +33,7 @@ Information about users, IP addresses, disk space, processes and environment var
 
 
 
-## Cron jobs
+# Cron jobs
 
 <p>
   <h3>The application will allow the user to visually:</h3>
