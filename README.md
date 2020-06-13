@@ -68,8 +68,10 @@ Information about users, IP addresses, disk space, processes and environment var
   <br>-Add a place for systemctl --type=service for linux machines
   <br>-Add a place for iostat
   <br>-Add a place for free (memory)
+  <br>-Add a controls for disk work in disk space section.
   <br>-Add a place for network monitoring
   <br>-Add logging.
+  <br>-Add settings page
   <br>Home page
   
 </p>
