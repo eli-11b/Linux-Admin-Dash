@@ -11,14 +11,14 @@ To run:
   <br> 3)open browser to <strong>localhost:5000</strong>
 </p>
 
-## The overview shows a nice and clean responsive display. 
+### The overview shows a nice and clean responsive display. 
 <p>
 Information about users, IP addresses, disk space, processes and environment variables can are displayed. 
 </p>
 <img src="images/screenshot-overview.png">
 <br>
 
-## Modals for confirmation and setting changes. 
+### Modals for confirmation and setting changes. 
 <p>When you press the <strong>restart</strong> button.</p> 
 <img src="images/screenshot-modal.png">
 <p>  When you press <strong>release</strong> IP</p>
@@ -58,7 +58,7 @@ Information about users, IP addresses, disk space, processes and environment var
 </p>
 
 
-## Future Work
+# Future Work
 
 <p> 
  I will have a modal display for the submitting and confirming input and commands when a button is clicked. 
