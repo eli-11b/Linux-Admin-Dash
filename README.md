@@ -70,6 +70,6 @@ Information about users, IP addresses, disk space, processes and environment var
   <br>-Add a place for free (memory)
   <br>-Add a place for network monitoring
   <br>-Add logging.
-  <br>HOme page
+  <br>Home page
   
 </p>
