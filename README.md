@@ -29,6 +29,8 @@ Information about users, IP addresses, disk space, processes and environment var
 <img src="images/screenshot-modal-renewip.png">
 <p>  When you press <strong>kill</strong> to kill a process</p>
 <img src="images/screenshot-modal-killprocess.png">
+<p> When you press <strong>edit</strong> to edit the environment variables</p>
+<img src="images/coming-soon.png">
 
 
 
