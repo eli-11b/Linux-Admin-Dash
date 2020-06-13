@@ -61,12 +61,15 @@ Information about users, IP addresses, disk space, processes and environment var
 ## Future Work
 
 <p> 
-All buttons need to be wired. I will have a modal display for the submitting and confirming input and commands when a button is clicked. The cronjobs page is just the UI. Also, remote connectivity and remote machine control will be added to allow for remote administration.
-  <br>
+ I will have a modal display for the submitting and confirming input and commands when a button is clicked. 
+  <br>Remote connectivity and remote machine control will be added to allow for remote administration.
+  <br>-Unified color pallete.
   <br>-Add a place for launchctl -list for apple machines
   <br>-Add a place for systemctl --type=service for linux machines
   <br>-Add a place for iostat
   <br>-Add a place for free (memory)
   <br>-Add a place for network monitoring
+  <br>-Add logging.
+  <br>HOme page
   
 </p>
