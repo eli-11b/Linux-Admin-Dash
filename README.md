@@ -70,8 +70,6 @@ Information about users, IP addresses, disk space, processes and environment var
  I will have a modal display for the submitting and confirming input and commands when a button is clicked. 
   <br>Remote connectivity and remote machine control will be added to allow for remote administration.
   <br>-Unified color pallete.
-  <br>-Add a place for launchctl -list for apple machines
-  <br>-Add a place for systemctl --type=service for linux machines
   <br>-Add a place for iostat
   <br>-Add a place for free (memory)
   <br>-Add a controls for disk work in disk space section.
