@@ -4,6 +4,7 @@ from subprocess import check_output
 from flask import Flask, render_template, request, url_for, Response
 import getpass
 import webbrowser as wb
+import os
 
 app = Flask(__name__, template_folder="templates", static_folder="assets")
 
@@ -36,9 +37,18 @@ def system_stats():
 							current_users=current_users,
 							disk_space=disk_space,
 							env_variables=env_variables,
-							processes=processes
+							processes=processes,
 							)
-							
+
+#Restart Machine
+@app.route('/restart_machine', methods=['POST',])
+def restart_machine():
+	""" this function restarts the machine after confirming in the restart modal, for linux machines adjust the sudoers file
+		username ALL=NOPASSWD:/sbin/reboot	to allow reboots without password but still running sudo
+	"""
+	reboot= check_output(['./reboot.sh']).decode('utf-8')
+	return reboot
+								
 #Cron Jobs
 @app.route('/cronjobs',methods=['GET',])
 
